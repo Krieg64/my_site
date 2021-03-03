@@ -18,14 +18,23 @@
 </head>
 <body id="body">
     <header class="header-component">
+		<input type="checkbox" name="check-bar" id="check-bar" class="check-bar">
 		<div class="logo-header">
 			<img src="./src/files/avatar.png" width="100%" alt="logo">
 		</div>
+		<div class="bar-set">
+			<div class="fas-header top"></div>
+			<div class="fas-header middle"></div>
+			<div class="fas-header bottom"></div>
+		</div>
         <div class="bar-header">
+			<h3 class="title-bar">Krieg's</h3>
+			<hr class="line-break">
             <ul class="menu-header">
                 <li><a class="link-header quem-sou" href="#anchor-skill">Skills</a></li>
-                <li><a class="link-header" href="#template">Portifólio</a></li>
+                <li><a class="link-header" href="#anchor-project">Projetos</a></li>
                 <li><a class="link-header" href="#contact">Contato</a></li>
+				<li><a class="link-header button-home" href="">Download CV</a></li>
             </ul>
         </div>
     </header>
@@ -208,7 +217,7 @@
 		<div id="view-skill-component" class="view-skill">
 		</div>
 	</section>
-	<section class="box project-component">
+	<section id="anchor-project" class="box project-component">
 		<h2 class="title-project">Projetos</h2>
 		<article class="view-project">
 			<figure class="component-img"><a href="https://github.com/Krieg64"><img class="img-project" src="./src/files/avatar.png" alt=""></a></figure>
@@ -217,31 +226,6 @@
 		</article>
 	</section>
 	<footer>
-		<form class="box-shadow" id="contact" action="#" method="#">
-			<h3>Fale comigo</h3> 
-			<div id="input">
-				<label for="name">Nome: </label><br>
-				<input type="text" id="name" name="name"><br>
-			</div>
-			<div id="input">
-				<label for="email">e-mail: </label><br>
-				<input type="text" id="email" name="email">
-			</div>
-			<div id="input">
-				<label for="phone">Telefone: </label><br>
-				<input type="tel" id="phone" name="phone">
-			</div>
-			<div id="input">
-				<label for="subject">Assunto:</label><br>
-				<input type="text" id="subject" name="subject">
-			</div>
-			<div id="text">
-				<label for="textarea">Mensagem: </label><br>
-				<textarea id="textarea" name="textarea"></textarea>
-			</div>
-			<button class="box-shadow" type="submit">Enviar</button>
-		</form>
-
 		<div id="cop">
 			<a>Copyright © 2020 Caio Fabio</a>
 		</div>

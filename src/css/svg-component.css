@@ -34,6 +34,10 @@
   font-size: 1.5rem;
   font-family: Rubik;
   box-shadow: 5px 5px 1px black;
+  cursor: pointer;
+}
+.button-home:hover {
+  transform: scale(1.05);
 }
 @media (max-width: 600px) {
   .component-titles {
