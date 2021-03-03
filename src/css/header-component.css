@@ -1,0 +1,47 @@
+.header-component {
+  width: 100vw;
+  display: flex;
+  background-color: #f25e3d;
+}
+.logo-header {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-header img {
+  width: 46px;
+  height: 46px;
+  margin: 5px;
+  border: 2px solid#000;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.bar-header {
+  width: 90vw;
+  color: #f25e3d;
+  text-shadow: -3px -3px 6px Rgba(255, 255, 255, 0.15),
+    5px 5px 6px Rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px;
+}
+.link-header {
+  text-decoration: none;
+  color: white;
+  font-family: Rubik, "san-serif";
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: -3px -3px 6px Rgba(255, 255, 255, 0.1),
+    4px 4px 6px Rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+}

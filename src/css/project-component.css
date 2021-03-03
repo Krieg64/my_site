@@ -1,0 +1,37 @@
+.box.project-component {
+  width: 100%;
+  height: auto;
+  border-bottom: 10px solid white;
+}
+.title-project {
+  color: white;
+  font-size: 3rem;
+  font-family: Rubik;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.view-project {
+  width: 100vw;
+  display: inline-flex;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.component-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 2rem;
+  margin-bottom: 5rem;
+  background-color: #4c5b84;
+  box-shadow: 10px 10px 0 white;
+}
+.img-project {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+.img-project:hover {
+  transform: scale(1.01);
+}

@@ -1,0 +1,102 @@
+/* Color Theme Swatches in Hex */
+.Black-Book-Lodge-1-hex { color: #0A5159; }
+.Black-Book-Lodge-2-hex { color: #188C8C; }
+.Black-Book-Lodge-3-hex { color: #D98E73; }
+.Black-Book-Lodge-4-hex { color: #F25E3D; } 
+.Black-Book-Lodge-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Black-Book-Lodge-1-rgba { color: rgba(9, 81, 89, 1); }
+.Black-Book-Lodge-2-rgba { color: rgba(23, 140, 140, 1); }
+.Black-Book-Lodge-3-rgba { color: rgba(216, 142, 114, 1); }
+.Black-Book-Lodge-4-rgba { color: rgba(242, 93, 60, 1); }
+.Black-Book-Lodge-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Black-Book-Lodge-1-hsla { color: hsla(185, 80, 19, 1); }
+.Black-Book-Lodge-2-hsla { color: hsla(180, 70, 32, 1); }
+.Black-Book-Lodge-3-hsla { color: hsla(16, 57, 65, 1); }
+.Black-Book-Lodge-4-hsla { color: hsla(11, 87, 59, 1); }
+.Black-Book-Lodge-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+astro planetas astronauta 
+
+games 
+borderlands Krieg
+
+
+class="cloud1"
+
+
+paleta de cores anima home planet
+
+/* Color Theme Swatches in Hex */
+.teste-roxo-turquesa-1-hex { color: #722973; }
+.teste-roxo-turquesa-2-hex { color: #63048C; }
+.teste-roxo-turquesa-3-hex { color: #21AFBF; }
+.teste-roxo-turquesa-4-hex { color: #D9CAB0; }
+.teste-roxo-turquesa-5-hex { color: #19434D; }
+
+/* Color Theme Swatches in RGBA */
+.teste-roxo-turquesa-1-rgba { color: rgba(114, 41, 115, 1); }
+.teste-roxo-turquesa-2-rgba { color: rgba(99, 4, 140, 1); }
+.teste-roxo-turquesa-3-rgba { color: rgba(33, 175, 191, 1); }
+.teste-roxo-turquesa-4-rgba { color: rgba(217, 202, 176, 1); }
+.teste-roxo-turquesa-5-rgba { color: rgba(25, 67, 77, 1); }
+
+/* Color Theme Swatches in HSLA */
+.teste-roxo-turquesa-1-hsla { color: hsla(299, 47, 30, 1); }
+.teste-roxo-turquesa-2-hsla { color: hsla(281, 94, 28, 1); }
+.teste-roxo-turquesa-3-hsla { color: hsla(186, 70, 43, 1); }
+.teste-roxo-turquesa-4-hsla { color: hsla(38, 35, 77, 1); }
+.teste-roxo-turquesa-5-hsla { color: hsla(191, 50, 20, 1); }
+
+
+
+paleta planeta amarelo
+
+/* Color Theme Swatches in Hex */
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-1-hex { color: #0E0F26; }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-2-hex { color: #03A678; }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-3-hex { color: #F2CD13; }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-4-hex { color: #F28322; }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-5-hex { color: #F25757; }
+
+/* Color Theme Swatches in RGBA */
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-1-rgba { color: rgba(14, 14, 38, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-2-rgba { color: rgba(2, 165, 119, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-3-rgba { color: rgba(242, 205, 18, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-4-rgba { color: rgba(242, 131, 33, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-5-rgba { color: rgba(242, 86, 86, 1); }
+
+/* Color Theme Swatches in HSLA */
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-1-hsla { color: hsla(237, 46, 10, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-2-hsla { color: hsla(163, 96, 33, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-3-hsla { color: hsla(50, 89, 51, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-4-hsla { color: hsla(27, 88, 54, 1); }
+.PUC_00147_17Z-Universo-ebanner-800x516-alterado16-5-hsla { color: hsla(0, 85, 64, 1); }
+
+
+paleta de cor astronauta
+
+/* Color Theme Swatches in Hex */
+.Black-&-Orange-イラスト-1-hex { color: #F2EBDF; }
+.Black-&-Orange-イラスト-2-hex { color: #F2620F; }
+.Black-&-Orange-イラスト-3-hex { color: #F24405; }
+.Black-&-Orange-イラスト-4-hex { color: #8C2703; }
+.Black-&-Orange-イラスト-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Black-&-Orange-イラスト-1-rgba { color: rgba(242, 235, 222, 1); }
+.Black-&-Orange-イラスト-2-rgba { color: rgba(242, 98, 14, 1); }
+.Black-&-Orange-イラスト-3-rgba { color: rgba(242, 68, 4, 1); }
+.Black-&-Orange-イラスト-4-rgba { color: rgba(140, 39, 2, 1); }
+.Black-&-Orange-イラスト-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Black-&-Orange-イラスト-1-hsla { color: hsla(39, 43, 91, 1); }
+.Black-&-Orange-イラスト-2-hsla { color: hsla(22, 89, 50, 1); }
+.Black-&-Orange-イラスト-3-hsla { color: hsla(16, 96, 48, 1); }
+.Black-&-Orange-イラスト-4-hsla { color: hsla(16, 96, 28, 1); }
+.Black-&-Orange-イラスト-5-hsla { color: hsla(0, 0, 5, 1); }

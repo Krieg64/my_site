@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+body {
+  width: 100vw;
+  height: auto;
+  background-color: #222323;
+}
+
+.box-shadow {
+  box-shadow: -3px -3px 4px Rgba(80, 80, 80, 0.65),
+    5px 5px 15px Rgba(13, 13, 13, 0.9);
+}
+.box {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+form {
+  width: 70%;
+  height: auto;
+  margin: 4% auto;
+  padding: 2vw;
+  display: block;
+  border-radius: 30px;
+  background-color: #222323;
+}
+label {
+  font-family: ubuntu;
+  font-size: 1.7vw;
+  color: white;
+}
+form h3 {
+  font-family: Rubik;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#input {
+  width: 48%;
+  height: auto;
+  float: left;
+  margin: 1%;
+}
+#input input {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border: 1px solid black;
+  box-shadow: inset 4px 4px 4px Rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+#text {
+  width: 99%;
+  height: auto;
+  margin: 1%;
+}
+#text textarea {
+  width: 99%;
+  height: 10vw;
+  padding: 15px;
+  box-shadow: inset 4px 4px 4px Rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+form button {
+  width: 20%;
+  height: auto;
+  padding: 10px;
+  font-family: Rubik;
+  color: white;
+  background-color: #222323;
+  font-size: 2vw;
+  border-radius: 2vw;
+  display: block;
+  margin: 2vw auto;
+}
+#cop {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+#cop a {
+  width: 100%;
+  font-family: Ubuntu;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #template {
+    width: 100%;
+    height: auto;
+    column-count: 1;
+  }
+  #finalfooter {
+    width: 70%;
+  }
+  .social {
+    width: 100%;
+  }
+}

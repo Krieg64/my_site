@@ -1,0 +1,70 @@
+.box.skill-component {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 10px solid white;
+}
+.view-skill {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.title-skill-component {
+  color: white;
+  font-size: 3rem;
+  font-family: Rubik;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.skill-box {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0;
+}
+.title-skill {
+  color: white;
+  font-family: Rubik;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.logo-skill {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0;
+  padding: 10px;
+}
+.skill-loading {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 2rem;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.title-progress-skill {
+  width: 100%;
+}
+::-webkit-progress-bar {
+  background-color: white;
+  color: black;
+}
+::-webkit-progress-value {
+  background-color: #77acf2;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .box.skill-component {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .view-skill {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
