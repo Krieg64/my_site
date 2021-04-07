@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../files/photohome4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgba(18, 104, 114, 0.6);
+}
+.homePhoto {
+  width: 100%;
+  height: 100%;
+}
+.componentDescription {
+  display: flex;
+}
+.boxDescript {
+  width: 40%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.descriptionElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.descriptionElement h2 {
+  color: white;
+  padding: 6%;
+  font-family: "Potta One", cursive;
+  font-size: 2rem;
+}
+.descriptionElement p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 4% 6%;
+}
+.boxDescript img {
+  width: auto;
+  height: auto;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+}
+.boxDescript button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: "Potta One", cursive;
+}
+.firstBarHome {
+  width: auto;
+  height: 10vh;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.personHome {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+.logoHome {
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin: auto;
+  padding: 1px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+.personHome img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.titleHome {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  color: white;
+  padding: 10px;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Potta One", cursive;
+}
+.iconsContacts {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+}
+.navHome {
+  width: 30%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 0 20px;
+  justify-content: center;
+  margin-right: 8%;
+}
+.navLink {
+  font-size: 3rem;
+  font-family: "Potta One", cursive;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.navLink:hover {
+  transform: scale(1.05) translateX(-10px);
+}
+.componentPhotos {
+  display: block;
+  width: 80%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.componentPhotos h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: "Potta One", cursive;
+  font-size: 2rem;
+  color: white;
+}
+.boxPhotos {
+  width: 98%;
+  margin: 1%;
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.photosElement {
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  break-inside: avoid;
+}
+.photos {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+}
+.photosElement h2 {
+  width: 100%;
+  position: inherit;
+  bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+.photosElement p {
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  padding: 5px;
+  position: inherit;
+  bottom: 0;
+}
+.photosElement:hover .photos {
+  display: block;
+}
+
+.photosElement img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.boxContacts {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0) 50%
+  );
+}
+.boxContacts h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 6%;
+  font-size: 2rem;
+  font-family: "Potta One", cursive;
+}
+.contactsIcons {
+  width: 80%;
+  display: block;
+  margin: auto;
+  column-count: 3;
+}
+.contactsIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Potta One", cursive;
+}
+.contactsIcons svg {
+  width: 10%;
+  height: 10%;
+  padding: 3%;
+}
+
+.boxFooter {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

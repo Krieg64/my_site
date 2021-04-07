@@ -8,10 +8,13 @@
 }
 .component-svg {
   width: 100%;
+  height: inherit;
   display: flex;
   box-sizing: content-box;
 }
 .component-svg svg {
+  height: inherit;
+  object-fit: cover;
   width: 100%;
 }
 #arm {
@@ -67,13 +70,13 @@
 }
 @keyframes bigplanet {
   0% {
-    transform: scale(0.6) translateX(700px) translateY(-500px) rotate(0deg);
+    transform: scale(1) translateX(700px) translateY(-500px) rotate(0deg);
   }
   50% {
-    transform: scale(0.4) translateY(-400px);
+    transform: scale(0.7) translateY(-400px);
   }
   100% {
-    transform: scale(0.6) translateX(-700px) translateY(-500px) rotate(-200deg);
+    transform: scale(1) translateX(-700px) translateY(-500px) rotate(-200deg);
   }
 }
 @keyframes moveastro {
