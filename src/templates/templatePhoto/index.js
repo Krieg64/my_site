@@ -27,10 +27,12 @@ const photos = [
 
 
 var photo = document.getElementById("root")
+var photoElement = document.getElementById(photoElement)
 
 
 photo.innerHTML = photos.map(photo => `
-    <div class="photosElement" id="photoElement">
+    
+    <div class="photosElement" id="photoElement"> 
         <div class="photos">
             <h2>${photo.name}</h2>
             <p>description of photo</p>

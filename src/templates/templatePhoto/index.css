@@ -2,63 +2,81 @@
   padding: 0;
   margin: 0;
 }
+.body {
+  background-image: url("../../files/photohome4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+}
 .home {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  background-image: url("../../files/photohome4.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: rgba(18, 104, 114, 0.6);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 1%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 .homePhoto {
   width: 100%;
   height: 100%;
 }
 .componentDescription {
+  width: 100%;
+  height: 90vh;
   display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .boxDescript {
-  width: 40%;
-  height: 50vh;
+  width: 79%;
+  max-width: 750px;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid white;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: [start] 48% [line1] 20px [line2] 48% [end];
+  grid-template-rows: [row-start] 58% [row1] 2% [row2] 18% [row3] 2% [row4] 20% [end];
+  margin: 2% 5%;
+  padding: 1.5%;
 }
-.descriptionElement {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.descriptionElement h2 {
+.boxDescript h2 {
+  grid-column: start / line1;
+  grid-row: row-start / row1;
   color: white;
   padding: 6%;
   font-family: "Potta One", cursive;
-  font-size: 2rem;
+  font-size: clamp(20px, 6vw, 45px);
 }
-.descriptionElement p {
+.boxDescript p {
+  grid-column: start / line1;
+  grid-row: row2 / row3;
   color: white;
   font-family: sans-serif;
   font-size: 1rem;
   padding: 4% 6%;
 }
 .boxDescript img {
-  width: auto;
+  width: 80%;
   height: auto;
+  object-fit: cover;
   padding: 2px;
-  margin: 10px;
+  margin: auto;
   border: 2px solid white;
+  grid-column: line2 / end;
+  grid-row: row-start / end;
 }
 .boxDescript button {
+  grid-column: start / line1;
+  grid-row: row4 / end;
   border: 2px solid white;
   background-color: transparent;
   color: white;
   display: block;
   margin: auto;
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-family: "Potta One", cursive;
 }
 .firstBarHome {
@@ -114,62 +132,95 @@
   border-radius: 50%;
 }
 .navHome {
-  width: 30%;
-  height: 90vh;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   float: right;
-  padding: 0 20px;
+  padding: 20px 10px;
   justify-content: center;
-  margin-right: 8%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  position: absolute;
+  right: 0;
 }
-.navLink {
-  font-size: 3rem;
+.navHome i {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+}
+.navHome input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.navHome input .navHome h2 {
+  color: white;
+  font-family: sans-serif;
+}
+.navLink a {
+  font-size: 2rem;
   font-family: "Potta One", cursive;
   color: white;
   text-decoration: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 .navLink:hover {
-  transform: scale(1.05) translateX(-10px);
+  transform: scale(1.05) translateX(-4px);
 }
 .componentPhotos {
   display: block;
-  width: 80%;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.3);
+  width: 95%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 10px;
-  margin: auto;
+  margin: 50px auto;
   border-radius: 5px;
   border: 2px solid white;
+  position: relative;
 }
 .componentPhotos h2 {
   display: flex;
   justify-content: center;
   padding: 10px;
   font-family: "Potta One", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
 }
 .boxPhotos {
   width: 98%;
   margin: 1%;
   column-count: 3;
-  column-gap: 10px;
+  column-gap: 20px;
 }
 
 .photosElement {
   width: 100%;
+  height: 100%;
   display: block;
   position: relative;
   border-radius: 10px;
   break-inside: avoid;
+  margin: auto;
+  top: 0;
+  right: 0;
 }
+.photosElement:active {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .photos {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
   display: none;
   position: absolute;
   border-radius: 10px;
@@ -195,16 +246,18 @@
 
 .photosElement img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
+  display: flex;
+  object-fit: contain;
 }
 .boxContacts {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
-    rgba(0, 0, 0) 50%
+    rgba(0, 0, 0) 10%
   );
 }
 .boxContacts h2 {
@@ -246,3 +299,47 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .navHome {
+    padding: 10px;
+    top: 0;
+  }
+  input {
+  }
+
+  .navLink {
+    display: none;
+  }
+  .navHome h2 {
+    display: none;
+  }
+  .navHome input:checked ~ .navLink {
+    display: block;
+  }
+}
+
+transform: rotate(90deg);
+@media (max-width: 450px) {
+  .boxDescript img {
+    margin: 10px;
+    grid-column: line2 / end;
+    grid-row: row-start / row1;
+  }
+
+  .boxDescript h2 {
+    grid-column: start / line1;
+    grid-row: row-start / row1;
+  }
+  .boxDescript p {
+    grid-column: start / end;
+    grid-row: row2 / row3;
+  }
+  .boxDescript button {
+    grid-column: start / end;
+    grid-row: row4 / end;
+  }
+}
+
+columns: [start] 48% [line1] 20px [line2] 48% [end];
+rows: [row-start] 58% [row1] 2% [row2] 20% [row3] 2% [row4] 18% [end];
