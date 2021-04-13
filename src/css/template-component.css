@@ -1,0 +1,9 @@
+.templates-component {
+  background-image: linear-gradient(170deg, #722973, #380150, #232323 70%);
+}
+.templates-component .component-img {
+  width: 290px;
+}
+.templates-component .img-project {
+  padding: 1px;
+}

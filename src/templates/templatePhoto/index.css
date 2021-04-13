@@ -118,9 +118,11 @@
   font-family: "Potta One", cursive;
 }
 .iconsContacts {
+  width: 80%;
   display: flex;
   padding: 10px;
   align-items: center;
+  float: left;
 }
 .icon {
   width: 2rem;
@@ -137,39 +139,50 @@
   display: flex;
   flex-direction: column;
   float: right;
-  padding: 20px 10px;
+  padding: 0;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 1);
   border: 2px solid white;
   position: absolute;
   right: 0;
 }
-.navHome i {
+.nav {
+  position: relative;
+  height: inherit;
+}
+.arrow {
   color: white;
-  display: flex;
+  height: 40px;
+  display: none;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  position: relative;
+  font-size: 4rem;
+  transition: 0.5s ease-in-out;
+  padding: 0;
 }
-.navHome input {
+.arrow::before {
+  display: none;
+}
+.nav input {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 40px;
+  top: 0;
+  opacity: 0;
+  display: none;
+  z-index: 999;
 }
-.navHome input .navHome h2 {
-  color: white;
-  font-family: sans-serif;
-}
-.navLink a {
+.navLink a,
+h2 {
   font-size: 2rem;
-  font-family: "Potta One", cursive;
+  font-family: sans-serif;
+  font-weight: 900;
   color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 15px 10px;
 }
 .navLink:hover {
   transform: scale(1.05) translateX(-4px);
@@ -196,7 +209,7 @@
 .boxPhotos {
   width: 98%;
   margin: 1%;
-  column-count: 3;
+  column-count: 5;
   column-gap: 20px;
 }
 
@@ -231,6 +244,7 @@
   bottom: 15px;
   display: flex;
   justify-content: flex-start;
+  font-size: clamp(16px, 2vw, 3rem);
 }
 .photosElement p {
   width: 100%;
@@ -239,6 +253,8 @@
   padding: 5px;
   position: inherit;
   bottom: 0;
+  font-weight: 500;
+  font-size: clamp(10px, 1.3vw, 1rem);
 }
 .photosElement:hover .photos {
   display: block;
@@ -281,10 +297,13 @@
   color: white;
   text-decoration: none;
   font-family: "Potta One", cursive;
+  font-size: clamp(12px, 1vw, 2rem);
 }
 .contactsIcons svg {
   width: 10%;
+  min-width: 30px;
   height: 10%;
+  min-height: 30x;
   padding: 3%;
 }
 
@@ -301,35 +320,51 @@
 }
 
 @media (max-width: 768px) {
+  .boxDescript {
+    height: 60vh;
+  }
   .navHome {
-    padding: 10px;
+    padding: 5px;
     top: 0;
   }
-  input {
+  .arrow {
+    display: flex;
   }
-
+  .arrow::before {
+    display: flex;
+  }
+  .navHome input {
+    display: block;
+  }
   .navLink {
     display: none;
   }
   .navHome h2 {
     display: none;
   }
-  .navHome input:checked ~ .navLink {
+  .but:checked ~ .navLink {
     display: block;
   }
+  .but:checked ~ .arrow {
+    transform: rotate(180deg);
+  }
+  .boxPhotos {
+    column-count: 3;
+  }
 }
-
-transform: rotate(90deg);
 @media (max-width: 450px) {
+  .boxDescript {
+    width: 100%;
+  }
   .boxDescript img {
-    margin: 10px;
-    grid-column: line2 / end;
+    margin-right: 10px;
+    grid-column: line1 / end;
     grid-row: row-start / row1;
   }
 
   .boxDescript h2 {
     grid-column: start / line1;
-    grid-row: row-start / row1;
+    grid-row: row-start / row2;
   }
   .boxDescript p {
     grid-column: start / end;
@@ -339,7 +374,10 @@ transform: rotate(90deg);
     grid-column: start / end;
     grid-row: row4 / end;
   }
+  .boxPhotos {
+    column-count: 2;
+  }
+  .contactsIcons {
+    column-count: 1;
+  }
 }
-
-columns: [start] 48% [line1] 20px [line2] 48% [end];
-rows: [row-start] 58% [row1] 2% [row2] 20% [row3] 2% [row4] 18% [end];

@@ -1,27 +1,27 @@
 const photos = [
     {
     name: "photo1",
-    destinationPhoto: "../../files/photohome.jpeg",
+    destinationPhoto: "../../files/photohome.jpeg"
     },
     {
     name: "photo2",
-    destinationPhoto: "../../files/photohome1.jpeg",
+    destinationPhoto: "../../files/photohome1.jpeg"
     },
     {
     name: "photo3",
-    destinationPhoto: "../../files/photohome2.jpeg",
+    destinationPhoto: "../../files/photohome2.jpeg"
     },
     {
     name: "photo4",
-    destinationPhoto: "../../files/project_clone-kabum.jpg",
+    destinationPhoto: "../../files/project_clone-kabum.jpg"
     },
     {
     name: "photo5",
-    destinationPhoto: "../../files/photohome.jpeg",
+    destinationPhoto: "../../files/photohome.jpeg"
     },
     {
     name: "photo6",
-    destinationPhoto: "../../files/photohome1.jpeg",
+    destinationPhoto: "../../files/photohome1.jpeg"
     },
 ]
 
@@ -31,7 +31,6 @@ var photoElement = document.getElementById(photoElement)
 
 
 photo.innerHTML = photos.map(photo => `
-    
     <div class="photosElement" id="photoElement"> 
         <div class="photos">
             <h2>${photo.name}</h2>
