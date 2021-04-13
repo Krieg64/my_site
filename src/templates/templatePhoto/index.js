@@ -31,12 +31,17 @@ var photoElement = document.getElementById(photoElement)
 
 
 photo.innerHTML = photos.map(photo => `
-    <div class="photosElement" id="photoElement"> 
-        <div class="photos">
-            <h2>${photo.name}</h2>
-            <p>description of photo</p>
+    <div class="boxPhoto">
+        <input type="checkbox" class="checkPhoto" >
+        <i class="fas fa-times cancelPhoto"></i>
+        <div class="photosElement" id="photoElement"> 
+            <div class="descriptionPhoto">
+                <h2>${photo.name}</h2>
+                <p>description of photo</p>
+            </div>
+            <img src=${photo.destinationPhoto}>
         </div>
-        <img src=${photo.destinationPhoto}>
     </div>
+    
 `
 )
