@@ -8,6 +8,13 @@
   background-size: 100%;
   background-color: black;
 }
+.back-site {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
 .home {
   width: 100%;
   height: auto;
@@ -118,19 +125,16 @@
   font-family: "Potta One", cursive;
 }
 .iconsContacts {
-  width: 50%;
+  width: 60%;
   display: block;
   column-count: 3;
   float: left;
 }
 .icon {
-  width: 100%;
   height: 2rem;
   fill: #fff;
   margin: 0 5px;
-  background-color: rgba(0, 0, 0, 0.2);
   padding: 10px;
-  border-radius: 50%;
 }
 .navHome {
   width: auto;
@@ -286,7 +290,7 @@ h2 {
   font-weight: 500;
   font-size: clamp(10px, 1.3vw, 1rem);
 }
-.photosElement:hover .descriptionPhoto {
+.boxPhoto:hover .descriptionPhoto {
   display: block;
 }
 
@@ -387,10 +391,10 @@ h2 {
     display: none;
   }
   .personHome {
-    width: 10%;
+    width: 30%;
   }
   .iconsContacts {
-    width: 90%;
+    width: 50%;
   }
   .boxDescript {
     width: 100%;
