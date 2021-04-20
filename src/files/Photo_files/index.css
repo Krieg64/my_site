@@ -1,0 +1,428 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background-image: url("../../files/photohome4.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+}
+.back-site {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 1%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.homePhoto {
+  width: 100%;
+  height: 100%;
+}
+.componentDescription {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.boxDescript {
+  width: 79%;
+  max-width: 750px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  display: grid;
+  grid-template-columns: [start] 48% [line1] 20px [line2] 48% [end];
+  grid-template-rows: [row-start] 58% [row1] 2% [row2] 18% [row3] 2% [row4] 20% [end];
+  margin: 2% 5%;
+  padding: 1.5%;
+}
+.boxDescript h2 {
+  grid-column: start / line1;
+  grid-row: row-start / row1;
+  color: white;
+  padding: 6%;
+  font-family: "Potta One", cursive;
+  font-size: clamp(20px, 6vw, 45px);
+}
+.boxDescript p {
+  grid-column: start / line1;
+  grid-row: row2 / row3;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 4% 6%;
+}
+.boxDescript img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  padding: 2px;
+  margin: auto;
+  border: 2px solid white;
+  grid-column: line2 / end;
+  grid-row: row-start / end;
+}
+.boxDescript button {
+  grid-column: start / line1;
+  grid-row: row4 / end;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  display: block;
+  margin: auto;
+  padding: 10px 10px;
+  font-family: "Potta One", cursive;
+}
+.firstBarHome {
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.personHome {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+.logoHome {
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin: auto;
+  padding: 1px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+.personHome img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.titleHome {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  color: white;
+  padding: 10px;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Potta One", cursive;
+}
+.iconsContacts {
+  width: 60%;
+  display: block;
+  column-count: 3;
+  float: left;
+}
+.icon {
+  height: 2rem;
+  fill: #fff;
+  margin: 0 5px;
+  padding: 10px;
+}
+.navHome {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 1);
+  border: 2px solid white;
+  position: absolute;
+  right: 0;
+}
+.nav {
+  position: relative;
+  height: inherit;
+  display: block;
+  margin: auto;
+}
+.arrow,
+.arrow::before {
+  color: white;
+  width: 100%;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  transition: 0.5s ease-in-out;
+  padding: 0;
+  margin: auto;
+}
+.nav input {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  opacity: 0;
+  display: none;
+  z-index: 999;
+}
+.navLink a,
+h2 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+.navLink:hover {
+  transform: scale(1.05) translateX(-4px);
+}
+.componentPhotos {
+  display: block;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  margin: 50px auto;
+  border-radius: 5px;
+  border: 2px solid white;
+  position: relative;
+}
+.componentPhotos h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: "Potta One", cursive;
+  font-size: 2.5rem;
+  color: white;
+}
+.boxPhotos {
+  width: 98%;
+  margin: 1%;
+  column-count: 5;
+  column-gap: 20px;
+}
+.boxPhoto {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.photosElement {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  break-inside: avoid;
+  margin: auto;
+  top: 0;
+  right: 0;
+}
+.checkPhoto {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkPhoto:checked ~ .photosElement {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.checkPhoto:checked ~ .cancelPhoto {
+  font-size: 2.5rem;
+  display: block;
+  z-index: 110;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+.checkPhoto:checked {
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+.descriptionPhoto {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.photosElement h2 {
+  width: 100%;
+  position: inherit;
+  bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: clamp(16px, 2vw, 3rem);
+}
+.photosElement p {
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  padding: 5px;
+  position: inherit;
+  bottom: 0;
+  font-weight: 500;
+  font-size: clamp(10px, 1.3vw, 1rem);
+}
+.boxPhoto:hover .descriptionPhoto {
+  display: block;
+}
+
+.photosElement img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  object-fit: contain;
+}
+.boxContacts {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0) 10%
+  );
+}
+.boxContacts h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 6%;
+  font-size: 2rem;
+  font-family: "Potta One", cursive;
+}
+.contactsIcons {
+  width: 80%;
+  display: block;
+  margin: auto;
+  column-count: 3;
+}
+.contactsIcons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Potta One", cursive;
+  font-size: clamp(12px, 1vw, 2rem);
+}
+.contactsIcons svg {
+  width: 10%;
+  min-width: 30px;
+  height: 10%;
+  min-height: 30x;
+  padding: 3%;
+}
+
+.boxFooter {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .boxDescript {
+    height: 60vh;
+  }
+  .navHome {
+    padding: 5px;
+    top: 0;
+  }
+  .arrow {
+    display: flex;
+  }
+  .arrow::before {
+    display: flex;
+  }
+  .navHome input {
+    display: block;
+  }
+  .navLink {
+    display: none;
+  }
+  .navHome h2 {
+    display: none;
+  }
+  .but:checked ~ .navLink {
+    display: block;
+  }
+  .but:checked ~ .arrow {
+    transform: rotate(180deg);
+  }
+  .boxPhotos {
+    column-count: 3;
+  }
+}
+@media (max-width: 450px) {
+  .titleHome {
+    display: none;
+  }
+  .personHome {
+    width: 30%;
+  }
+  .iconsContacts {
+    width: 50%;
+  }
+  .boxDescript {
+    width: 100%;
+  }
+  .boxDescript img {
+    margin-right: 10px;
+    grid-column: line1 / end;
+    grid-row: row-start / row1;
+  }
+  .boxDescript h2 {
+    grid-column: start / line1;
+    grid-row: row-start / row2;
+  }
+  .boxDescript p {
+    grid-column: start / end;
+    grid-row: row2 / row3;
+  }
+  .boxDescript button {
+    grid-column: start / end;
+    grid-row: row4 / end;
+  }
+  .boxPhotos {
+    column-count: 2;
+  }
+  .contactsIcons {
+    column-count: 1;
+  }
+  .componentPhotos {
+    width: 90%;
+    margin: auto;
+  }
+}

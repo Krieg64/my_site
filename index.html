@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./src/files/ico/avatar.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="./src/css/svg.css">
 	<link rel="stylesheet" href="./src/css/svg-component.css">
@@ -10,6 +11,7 @@
 	<link rel="stylesheet" href="./src/css/skill-component.css">
 	<link rel="stylesheet" href="./src/css/project-component.css">
 	<link rel="stylesheet" href="./src/css/template-component.css">
+	<link rel="stylesheet" href="./src/css/contacts-component.css">
     <script src="https://kit.fontawesome.com/b92ed582cb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;800&display=swap" rel="stylesheet">
@@ -32,10 +34,9 @@
 			<h3 class="title-bar">Krieg's</h3>
 			<hr class="line-break">
             <ul class="menu-header">
-                <li><a class="link-header quem-sou" href="#anchor-skill">Skills</a></li>
                 <li><a class="link-header" href="#anchor-project">Projetos</a></li>
-                <li><a class="link-header" href="#contact">Contato</a></li>
-				<li><a class="link-header button-home" href="">Download CV</a></li>
+                <li><a class="link-header" href="#templates">Templates</a></li>
+				<li><a class="link-header button-home" href="./src/files/download/cv-caio.pdf" download>Download CV</a></li>
             </ul>
         </div>
     </header>
@@ -46,8 +47,8 @@
 				<h2 class="title-home subtitle-home">Criando seu Mundo.</h2>
 			</div>
 			<div class="div-button">
-				<a class="button-home" href="https://github.com/Krieg64">GitHub <i class="fab fa-github-square"></i></a>
-				<a class="button-home">Contatos</a>
+				<a class="button-home" target="_blank" href="https://github.com/Krieg64">GitHub <i class="fab fa-github-square"></i></a>
+				<a class="button-home" href="#contacts">Contatos</a>
 			</div>
 		</div>
         <div class="component-svg">
@@ -226,7 +227,7 @@
 			<figure class="component-img"><a href="https://github.com/Krieg64"><img class="img-project" src="./src/files/semnadaainda.png" alt="sem nada"></a></figure>
 		</article>
 	</section>
-	<section class="templates-component">
+	<section class="templates-component" id="templates">
 		<h2 class="title-project">Templates</h2>
 		<article class="view-project-template">
 			<div class="template-img">
@@ -253,6 +254,26 @@
 				<div class="infoTemplate"><h3>Template2</h3><p>descrição do template 2</p></div>
 			</div>
 		</article>
+	</section>
+	<section class="contacts-component" id="contacts">
+		<div class="boxContacts">
+			<a href="https://www.linkedin.com/in/caio-fabio-krieg/" target="_blank" class="icons-contacts">
+				<i class="fab fa-linkedin-in"></i>
+				<p>Caio Fabio</p>
+			</a>
+		</div>
+		<div class="boxContacts">
+			<a href="https://github.com/Krieg64" target="_blank" class="icons-contacts">
+				<i class="fab fa-github"></i>
+				<p>Krieg64</p>
+			</a>
+		</div>
+		<div class="boxContacts">
+			<a href="https://www.instagram.com/caiooq/" target="_blank" class="icons-contacts">
+				<i class="fab fa-instagram"></i>
+				<p>Caiooq</p>
+			</a>
+		</div>
 	</section>
 	<footer>
 		<div id="cop">

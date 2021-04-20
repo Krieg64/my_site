@@ -1,0 +1,32 @@
+.contacts-component {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.boxContacts {
+  width: 30%;
+  min-width: 200px;
+  height: auto;
+  margin: auto;
+}
+.icons-contacts {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.icons-contacts i {
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+}
+.icons-contacts p {
+  font-size: 1rem;
+  padding: 10px;
+}
